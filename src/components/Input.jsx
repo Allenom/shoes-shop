@@ -1,3 +1,5 @@
+import './Input.css'
+
 function Input({ onChange, value, title, name, color }) {
   return (
     <label className='sidebar-label-container'>

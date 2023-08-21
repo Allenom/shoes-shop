@@ -4,12 +4,14 @@ import './Category.css'
 function Category({ handleChangeCategory }) {
   return (
     <div>
-      <h2 className='sidebar-title'>Category</h2>
+      <h2 className='category-title'>Category</h2>
       <div>
-        <label className='sidebar-label-container'>
-          <input onChange={handleChangeCategory} type='radio' value='' name='test'/>
-          <span className='checkmark'></span>All
-        </label>
+        <Input
+          onChange={handleChangeCategory}
+          value=""
+          title="All"
+          name="test"
+        />
         <Input
           onChange={handleChangeCategory}
           value="sneakers"

@@ -26,7 +26,7 @@ function App() {
     product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   )
 
-  // -----Radio filter-----
+  // -----Radio filters-----
   const handleChangeCategory = event => {
     setSelectedCategory(event.target.value)
   }
@@ -42,7 +42,7 @@ function App() {
     setSelectedCompany(event.target.value)
   }
 
-
+  // -----Combining filter-----
   function fillteredData(product) {
     let filteredProducts = product
 

@@ -1,7 +1,16 @@
 .color-title {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .all {
-    background: linear-gradient(blue, crimson);
+  background: linear-gradient(blue, crimson);
+}
+
+.color-white-btn + .checkmark:after {
+  top: 5.4px;
+  left: 5.4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: black;
 }
