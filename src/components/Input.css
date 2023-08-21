@@ -10,6 +10,10 @@
   user-select: none;
 }
 
+.sidebar-label-container:last-child {
+  margin-bottom: 30px;
+}
+
 .sidebar-label-container input {
   position: absolute;
   opacity: 0;

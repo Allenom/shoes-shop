@@ -11,7 +11,7 @@ import Card from "./components/Card"
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("")
-  const [selectedPrice, setSelectedPrice] = useState(0)
+  const [selectedPrice, setSelectedPrice] = useState("0")
   const [selectedColor, setSelectedColor] = useState("")
   const [selectedCompany, setSelectedCompany] = useState("")
 
@@ -63,8 +63,8 @@ function App() {
         (product.company === selectedCompany || selectedCompany === "") &&
 
         ((parseInt(selectedPrice) - 50 <= product.newPrice && product.newPrice <= parseInt(selectedPrice)) ||
-        selectedPrice == 0 ||
-        (parseInt(selectedPrice) == 200 && product.newPrice > 150))
+        selectedPrice === "0" ||
+        (parseInt(selectedPrice) === 200 && product.newPrice > 150))
     )
 
 

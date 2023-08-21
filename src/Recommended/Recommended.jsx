@@ -3,7 +3,7 @@ import './Recommended.css'
 
 function Recommended({ handleClick, selectedCompany}) {
   return (<>
-    <div>
+    <div className='recommended-section'>
       <h2 className='recommended-title'>Recommended</h2>
       <div className='recommended-flex'>
         <Button handleClick={handleClick} value="" title="All products" selectedCompany={selectedCompany} />

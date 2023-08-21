@@ -4,10 +4,12 @@ import "./Nav.css"
 
 function Nav({query, handleInputChange}) {
   return (
-    <nav>
+    <nav className='nav'>
       <div className="nav-container">
         <input onChange={handleInputChange} type="text" className="search-input" placeholder="Enter your search shoes " value={query}/>
       </div>
+
+      <div></div>
 
       <div className="profile-container">
         <a href="/">

@@ -1,8 +1,9 @@
 .sidebar {
   position: fixed;
   z-index: 3;
+  overflow-y: auto;
 
-  width: 15%;
+  width: 20%;
   height: 100%;
 
   display: flex;
@@ -12,6 +13,20 @@
   border-right: 2px solid #e5e5e5;
 }
 
+.sidebar::-webkit-scrollbar {
+  width:9px;
+}
+.sidebar::-webkit-scrollbar-track {
+  background:rgb(212, 212, 212);
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .sidebar-title {
   margin-bottom: 20px;
   font-size: 22px;
@@ -19,7 +34,7 @@
 }
 
 .logo-container {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .logo-container h1 {

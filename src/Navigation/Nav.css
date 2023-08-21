@@ -1,15 +1,15 @@
-nav {
+.nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
   padding: 20px;
-  margin-left: 2rem;
+  margin-left: 20%;
 
   border-bottom: 2px solid #f3f3f3;
 }
 
-input {
+.search-input {
   position: relative;
 
   width: 14rem;
