@@ -14,7 +14,7 @@ function Card({img, title, star, reviews, newPrice, prevPrice}) {
           <h3 className="card-title">{title}</h3>
           <section className="card-reviews">
 
-            {star}{star}{star}{star}
+          {[...Array(parseInt(star))].map((e, i) => <AiFillStar className='rating-star' />)}
 
             <span className="total-reviews">{reviews}</span>
           </section>
