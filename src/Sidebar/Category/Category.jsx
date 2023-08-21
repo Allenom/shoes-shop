@@ -1,12 +1,14 @@
 import Input from '../../components/Input'
 import './Category.css'
 
-function Category({ handleChangeCategory }) {
+
+function Category({ handleChangeCategory, checked }) {
   return (
     <div>
       <h2 className='category-title'>Category</h2>
       <div>
         <Input
+          checked={checked}
           onChange={handleChangeCategory}
           value=""
           title="All"

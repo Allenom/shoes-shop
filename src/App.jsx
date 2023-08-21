@@ -15,11 +15,15 @@ function App() {
   const [selectedColor, setSelectedColor] = useState("")
   const [selectedCompany, setSelectedCompany] = useState("")
 
+  // -----All Input defaultChecked-----
+  const [checked, setChecked] = useState(true);
+
   // -----Input filter-----
   const [query, setQuery] = useState("")
 
   const handleInputChange = event => {
     setQuery(event.target.value)
+    setChecked(false)
   }
 
   const filteredItems = products.filter(product =>
@@ -80,9 +84,9 @@ function App() {
   const result = fillteredData(products)
 
   return (<>
-    <Sidebar handleChangeCategory={handleChangeCategory} handleChangePrice={handleChangePrice} handleChangeColor={handleChangeColor} />
+    <Sidebar handleChangeCategory={handleChangeCategory} handleChangePrice={handleChangePrice} handleChangeColor={handleChangeColor} checked={checked} />
     <Navigation query={query} handleInputChange={handleInputChange} />
-    <Recommended handleClick={handleClick} />
+    <Recommended handleClick={handleClick} selectedCompany={selectedCompany} />
     <Products result={result} />
   </>)
 }

@@ -1,12 +1,12 @@
 import Input from '../../components/Input'
 import './Colors.css'
 
-function Colors({ handleChangeColor }) {
+function Colors({ handleChangeColor, checked }) {
   return (
     <div>
       <h2 className='sidebar-title color-title'>Colors</h2>
       <label className='sidebar-label-container'>
-        <input onChange={handleChangeColor} type='radio' value='' name='test1' />
+        <input onChange={handleChangeColor} type='radio' value='' name='test1' defaultChecked={checked} />
         <span className='checkmark all'></span>All
       </label>
       <Input
@@ -39,7 +39,7 @@ function Colors({ handleChangeColor }) {
       />
       <label className='sidebar-label-container'>
         <input className='color-white-btn' onChange={handleChangeColor} type='radio' value='white' name='test1' />
-        <span className='checkmark' style={{ background: "white", border: "2px solid black", color: "black" }} cssClass="danger"></span>White
+        <span className='checkmark' style={{ background: "white", border: "2px solid black", color: "black" }}></span>White
       </label>
     </div>
   )

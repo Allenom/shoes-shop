@@ -1,11 +1,12 @@
 import Input from '../../components/Input'
 import './Price.css'
 
-function Price({ handleChangePrice }) {
+function Price({ handleChangePrice, checked }) {
   return (
     <div className='ml'>
       <h2 className='sidebar-title price-title'>Price</h2>
       <Input
+        checked={checked}
         onChange={handleChangePrice}
         value={0}
         title="All"

@@ -1,4 +1,3 @@
-import { AiFillStar } from "react-icons/ai";
 
 const data = [
   {
@@ -120,7 +119,7 @@ const data = [
     img: "https://m.media-amazon.com/images/I/71E75yRwCDL._AC_UY575_.jpg",
     title: "Pacer Future Sneaker",
     star: "2",
-    reviews: "(123 reviews)",
+    reviews: "(3 reviews)",
     prevPrice: "$140,00",
     newPrice: "150",
     company: "Puma",
@@ -131,7 +130,7 @@ const data = [
     img: "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
     title: "Unisex-Adult Super",
     star: "5",
-    reviews: "(123 reviews)",
+    reviews: "(56 reviews)",
     prevPrice: "$140,00",
     newPrice: "150",
     company: "Puma",
@@ -142,7 +141,7 @@ const data = [
     img: "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg",
     title: "Roma Basic Sneaker",
     star: "5",
-    reviews: "(123 reviews)",
+    reviews: "(11 reviews)",
     prevPrice: "$140,00",
     newPrice: "150",
     company: "Puma",
@@ -209,7 +208,7 @@ const data = [
     img: "https://m.media-amazon.com/images/I/61N4GyWcHPL._AC_UY575_.jpg",
     title: "Classic Bandana Sneakers",
     star: "4",
-    reviews: "(123 reviews)",
+    reviews: "(7 reviews)",
     prevPrice: "$140,00",
     newPrice: "50",
     company: "Nike",
@@ -242,7 +241,7 @@ const data = [
     img: "https://m.media-amazon.com/images/I/61men05KRxL._AC_UY625_.jpg",
     title: "DREAM PAIRS Court Shoes",
     star: "5",
-    reviews: "(123 reviews)",
+    reviews: "(43 reviews)",
     prevPrice: "$140,00",
     newPrice: "150",
     company: "Nike",
@@ -265,7 +264,7 @@ const data = [
     img: "https://m.media-amazon.com/images/I/51PGWTXgf-L._AC_UY625_.jpg",
     title: "Low Mid Block Heels",
     star: "5",
-    reviews: "(123 reviews)",
+    reviews: "(78 reviews)",
     prevPrice: "$140,00",
     newPrice: "200",
     company: "Nike",
